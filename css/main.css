@@ -1,0 +1,174 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+body > * {
+  box-sizing: border-box;
+}
+button,
+#navbar-header {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+#main-header {
+  width: 100%;
+  background: #049483;
+  padding: 20px 0 30px 20px;
+  margin: 0;
+  color: white;
+  font-size: 36px;
+}
+#navbar-header {
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5c5c5c;
+  disabled: disabled;
+}
+ul {
+  padding: 0;
+  width: 208px;
+}
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: block;
+  padding: 0 15px;
+}
+a:hover {
+  color: #049483;
+  width: 100%;
+  background-color: white;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.active {
+  width: 100%;
+  background-color: white;
+  color: #049483;
+  border: 1px solid #049483;
+}
+header {
+  color: #049483;
+  font-size: 26px;
+}
+#navbar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 240px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #d9d9d9;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+.nav-link li {
+  padding: 15px 0;
+}
+#main-doc {
+  margin-left: 220px; /* Same as the width of the sidebar */
+  padding: 0px 20px;
+}
+.main-section {
+  padding: 0 0 20px 20px;
+  max-width: 85%;
+  box-sizing: border-box;
+}
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+.javascript {
+  padding: 5px;
+  background-color: #e6e6e6;
+  display: block;
+  margin-right: 20px;
+}
+.inline {
+  display: inline;
+}
+#credit {
+  background: #049483;
+  margin: 0;
+  padding: 8px 0 8px 20px;
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 240px;
+  box-sizing: border-box;
+}
+#github-link {
+  display: inline;
+  color: white;
+  padding-left: 0;
+}
+#github-link:hover {
+  color: black;
+  background-color: #049483;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 550px) {
+  #main-doc {
+    max-width: 100%;
+    margin: 0;
+  }
+  #main-header {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    float: left;
+    padding: 15px 0;
+  }
+  #navbar-header {
+    display: none;
+  }
+  #navbar {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    position: static;
+    padding: 15px 0 0 0;
+  }
+  #navbar li {
+    padding: 10px 0;
+    width: 100%;
+  }
+  ul {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  a,
+  a:hover,
+  #navbar-header {
+    width: 100%;
+  }
+  #main-doc {
+    margin-left: 0;
+    padding: 0;
+  }
+  .javascript {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #credit {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
